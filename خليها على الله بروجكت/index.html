@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حصر الطلاب و المعلمين المتضررين من الحرب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('back.jpg'); /* صورة الخلفية */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #fff; /* نص أبيض ليظهر جيداً على الخلفية */
+        }
+        h1 {
+            color: #333333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #28a745; /* اللون الأخضر للأزرار */
+            color: white; /* النص باللون الأبيض */
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #28a745; /* حدود الأزرار بنفس اللون الأخضر */
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838; /* تغيير الخلفية إلى اللون الأخضر الداكن عند التمرير */
+            color: white; /* النص يبقى أبيض */
+            border-color: #1e7e34; /* تغيير حدود الأزرار إلى الأخضر الداكن عند التمرير */
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        .logo.left {
+            left: 10px;
+        }
+        .logo.right {
+            right: 10px;
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شعار المؤسسة في الجهة اليسرى -->
+    <img src="logo.jpg" alt="شعار المؤسسة" class="logo left">
+    
+    <!-- شعار المؤسسة في الجهة اليمنى -->
+    <img src="logo.jpg" alt="شعار المؤسسة" class="logo right">
+
+    <div>
+        <h1>هل أنت ؟</h1>
+        <div class="buttons-container">
+            <button onclick="window.location.href='StudentData.php'">طالب</button>
+            <button onclick="window.location.href='teacherData.php'">معلم</button>
+            <button onclick="window.location.href='coolaboratorData.php'">معلم متطوع</button>
+        </div>
+    </div>
+
+</body>
+</html>

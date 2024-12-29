@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>الصفحة الرئيسية</h1>
+    <p>اختر الخيار الذي تريد:</p>
+
+    <!-- الأزرار الرئيسية -->
+    <button onclick="navigate('students')">طلاب</button>
+    <button onclick="navigate('teachers')">معلمين</button>
+    <button onclick="navigate('collaborators')">متعاونين</button>
+    <button onclick="navigate('schools')">عرض مدارس</button> <!-- التغيير هنا -->
+    <script>
+       function navigate(option) {
+    // بناء الرابط بشكل صحيح
+    window.location.href =  'AdminMethods.php?type=' + option;
+}
+    </script>
+</body>
+</html>
